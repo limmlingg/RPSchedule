@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>RP Schedule</title>
+	<link rel="stylesheet" href="page style.css">
+</head>
+<body>
+	<div id="schedule-container">
+
+		<!-- TODO: Put project description -->
+		<h1>Add your schedule</h1>
+
+		<form>
+
+			<!-- TODO: Edit based on project creator preferences -->
+			<div id="identity-fields">
+				<label for="name">Name</label>
+				<input type="text" placeholder="Alice Bob" name="name" required>
+
+				<label for="email">Email</label>
+				<input type="text" placeholder="bob@radiopulze.com" name="email" required>
+
+				<label for="study">Course of Study</label>
+				<input type="text" placeholder="FASS New Media" name="study">
+			</div>
+			<div id="schedule-info">
+
+				<h2>List down the timings when you are <strong>free</strong>:</h2>
+
+				<label for="monday-schedule">Monday</label>
+				<!-- TODO: Change to some form of numeric input, or something that can be parsed by the scheduler back end -->
+				<input type="text" placeholder="10am - 12pm" name="monday-schedule" required>
+
+				<label for="tuesday-schedule">Tuesday</label>
+				<input type="text" placeholder="Not free" name="tuesday-schedule" required>
+
+				<label for="wednesday-schedule">Wednesday</label>
+				<input type="text" placeholder="4pm-9pm on odd weeks only" name="wednesday-schedule" required>
+
+				<label for="thursday-schedule">Thursday</label>
+				<input type="text" placeholder="whole day (can don't make me broadcast during my free day?)" name="thursday-schedule" required>
+
+				<label for="friday-schedule">Friday</label>
+				<input type="text" placeholder="10am to 12pm, but I have class at BTC afterwards" name="friday-schedule" required>
+
+				<button type="submit">SUBMIT/UPDATE</button>
+			</div>
+
+		</form>
+
+	</div>
+</body>
+</html>
