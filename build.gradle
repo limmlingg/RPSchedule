@@ -1,0 +1,26 @@
+// Reference: https://spring.io/guides/gs/accessing-data-mysql/
+plugins {
+    id 'java'
+}
+
+group 'com.radiopulze.rpschedule'
+version '0.1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.optaplanner:optaplanner:7.16.0.Final'
+
+    compile("org.springframework.boot:spring-boot-starter-web")
+    // JPA Data (We are going to use Repositories, Entities, Hibernate, etc...)
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // Use MySQL Connector-J
+    compile 'mysql:mysql-connector-java'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
